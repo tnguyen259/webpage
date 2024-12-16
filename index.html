@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timmy Nguyen - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Timmy Nguyen
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          tim.nguyen@geemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +1234888999
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://cdn.pixabay.com/animation/2022/08/06/07/17/07-17-13-466_512.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            HoHoHo, It's your Santa, Timmy! <img src="https://cdn.pixabay.com/animation/2023/10/23/20/44/20-44-46-504_512.gif" width="100px"/>
+          </h1>
+          <p>
+            Here at your service to fulfil your Christmas fantasy. 
+            Hit me with your wildest wishes, and I'll see what I can do about them. 
+            Hope you have been good this year! 
+            If not, I'll have to ask Rudolph to set things right - if you get what I mean. 
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <!-- Add more skills here -->
+        <div class="skill">
+          <img src="html_finalprojimages/python.png"/> 
+          <h6>Python</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/CSS3.png"/> 
+          <h6>CSS</h6>
+          <p>2 months experience</p>
+        </div>  
+       
+        <div class="skill">
+          <img src="html_finalprojimages/OSIN.jpg"/> 
+          <h6>OSIN</h6>
+          <p>10 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/Santa.jpg"/> 
+          <h6>Making your wishes come true</h6>
+          <p>40 years</p>
+        </div>  
+
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Data Science Capstone</h3>
+            <ul>
+              <li>Developed a machine learning model and use public information to predict if SpaceX will reuse the first stage</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Data Analysis</h3>
+            <ul>
+              <li>Checking and looking for any naughty kid on this planet earth and giving gifts to the good ones. It's a hard work!</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Research</h3>
+            <ul>
+              <li>Conducted in-depth risk research assessment for financial crimes</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Had the pleasure to work with Timmy for the Capstone Project and he has been a very supportive peer. 
+          Always coming up with new ideas to improve the project and open for constructive feedback.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Tim is a remarkable effective and productive person. He has gone above and beyond his role. 
+          Tim's ability to manage his workload while mentoring and training the new joiners has been amazing.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Thank you Timmy for making my wishes come true last Christmas. 
+          I was a little bit naughty but have been good most of the year so Timmy granted me my wish! Thank you Timmy.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
